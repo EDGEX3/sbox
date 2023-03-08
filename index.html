@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="./sbox.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SBOX-[WORLD OF FUTURE]</title>
+    <style>
+.loading{
+  display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(./src/assets/bg/bg.png);
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index:1;
+}
+.sbox{
+        background:none;
+        max-width:128px;
+        height:128px;
+        animation-duration: 4s;
+        animation-name: bounceIn;
+        animation-delay: 5ms;
+       animation-iteration-count: infinite;
+      }
+      @keyframes bounceIn {
+  0% {
+    transform: scale(-1);
+    transform: rotate(-360deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(2);
+    transform: rotate(0deg);
+    opacity:1;
+  }
+  100% {
+    transform: scale(-1);
+    transform: rotate(360deg);
+    opacity: 0; 
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

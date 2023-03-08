@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Mona Sans";
+  src: url("../assets/fonts/Mona-Sans.woff2")
+    format("woff2 supports variations");
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mona Sans";
+}
+:root{
+  /* Color styles */
+--white-1: #FFFFFF;
+--white-2: #E7E7E8;
+--white-3: #CFCFD1;
+--white-4: #B6B8B9;
+--gray-1: #6E7074;
+--gray-2: #56585D;
+--gray-3: #3D4145;
+--gray-4: #25292E;
+--black-0: #1E1E1E;
+--black-1: #141820;
+--black-2: #0D1117;
+--dark-blue-gray-4: #273445;
+--redorange-1: #FFA28B;
+--redorange-2: #ED7F67;
+--orange-1: #FFA621;
+--orange-2: #FF6B00;
+--l-blue-1: #79ABE2;
+--l-blue-2: #388BFD;
+--d-blue-1: #0969DA;
+--d-blue-2: #233953;
+--green-1: #7EE787;
+--pink-1: #DD7DF7;
+--purple-1: #939AFF;
+--strpke: #000000;
+--red-1: #FF0000;
+--yellow-1: #FFB800;
+--green-2: #05FF00;
+}
+.loading{
+background-color: var(--black-2);
+}

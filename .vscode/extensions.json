@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "tauri-apps.tauri-vscode",
+    "dsznajder.es7-react-js-snippets",
+    "glenn2223.live-sass",
+    "whizkydee.material-palenight-theme",
+    "dbaeumer.vscode-eslint",
+  ]
+}
