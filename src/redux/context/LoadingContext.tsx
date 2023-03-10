@@ -1,5 +1,4 @@
 import {
-  Children,
   Dispatch,
   ReactNode,
   SetStateAction,
@@ -15,12 +14,14 @@ export interface LoadingContextInterface {
   loading: Loading;
   setLoading: Dispatch<SetStateAction<Loading>>;
 }
+
 const defaultState = {
   loading: {
     display: "flex",
   },
   setLoading: (loading: Loading) => {},
 } as LoadingContextInterface;
+
 export const LoadingContext =
   createContext<LoadingContextInterface>(defaultState);
 type LoadingProviderProps = {
@@ -29,8 +30,9 @@ type LoadingProviderProps = {
 
 export const LoadingProvider = ({ children }: LoadingProviderProps) => {
   const [loading, setLoading] = useState<Loading>({
-    display:"flex"
+    display: "flex",
   });
+
   return (
     <LoadingContext.Provider value={{ loading, setLoading }}>
       {children}

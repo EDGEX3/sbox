@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SBOX-[WORLD OF FUTURE]</title>
     <style>
+      @font-face {
+  font-family: 'Mona Sans';
+  src:
+    url('./src/assets/fonts/Mona-Sans.woff2') format('woff2 supports variations'),
+    url('./src/assets/fonts/Mona-Sans.woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
 .loading{
-  display: flex;
         align-items: center;
         justify-content: center;
         background: url(./src/assets/bg/bg.png);
-        background-size: cover;
+        background-size:contain;
+        background-repeat: no-repeat;
         height: 100%;
         width: 100%;
         position: absolute;
