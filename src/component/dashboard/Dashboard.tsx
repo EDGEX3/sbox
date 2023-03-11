@@ -1,4 +1,4 @@
-import { CheckSmall, Down, Info } from "@icon-park/react";
+import { CheckSmall, Down} from "@icon-park/react";
 import { useState } from "react";
 const Dashboard = () => {
   const [open, setopen] = useState({ state: false, filter: "Recent" });

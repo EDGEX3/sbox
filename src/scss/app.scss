@@ -158,13 +158,13 @@ width: 10px;
   overflow: hidden;
 }
 .box{
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 500px;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 20px;
   overflow: hidden;
   overflow-y: scroll;
   
@@ -172,11 +172,17 @@ width: 10px;
 .main-card{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   color: var(--white-1);
-  width: 300px;
-  height: 230px;
+  width: 180px;
+  height: 160px;
   border-radius: 10px;
   background-color: var(--black-2);
-  margin: 40px 10px;
+  margin: 10px 5px;
+}
+
+.card{
+  width: 100%;
+  height: inherit;
+
 }
