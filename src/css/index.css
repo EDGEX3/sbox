@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Mona Sans";
+    height: inherit;
+}
+.grids{
+    opacity: 0.2;
+    animation-name:flikker;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes flikker {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.2;
+    }100%{
+        opacity: 0;
+    }
+}

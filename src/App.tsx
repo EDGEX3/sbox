@@ -1,4 +1,4 @@
-import "./scss/css/app.css";
+import "./css/index.css";
 import Swindow from "./component/Swindow";
 import Loading from "./component/comman/macro/Loading";
 import { LoadingProvider } from "./redux/context/LoadingContext";
