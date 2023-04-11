@@ -1,60 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="./sbox.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SBOX-[WORLD OF FUTURE]</title>
-    <style>
-      @font-face {
-  font-family: 'Mona Sans';
-  src:
-    url('./src/assets/fonts/Mona-Sans.woff2') format('woff2 supports variations'),
-    url('./src/assets/fonts/Mona-Sans.woff2') format('woff2-variations');
-  font-weight: 200 900;
-  font-stretch: 75% 125%;
-}
-.loading{
-        align-items: center;
-        justify-content: center;
-        background: url(./src/assets/bg/bg.png);
-        background-size:contain;
-        background-repeat: no-repeat;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        z-index:1;
-}
-.sbox{
-        background:none;
-        max-width:128px;
-        height:128px;
-        animation-duration: 4s;
-        animation-name: bounceIn;
-        animation-delay: 5ms;
-       animation-iteration-count: infinite;
-      }
-      @keyframes bounceIn {
-  0% {
-    transform: scale(-1);
-    transform: rotate(-360deg);
-    opacity: 0;
-  }
-  50% {
-    transform: scale(2);
-    transform: rotate(0deg);
-    opacity:1;
-  }
-  100% {
-    transform: scale(-1);
-    transform: rotate(360deg);
-    opacity: 0; 
-  }
-}
-    </style>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="./sbox.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SBOX-[WORLD OF FUTURE]</title>
+  <style>
+    @font-face {
+      font-family: 'Mona Sans';
+      src:
+        url('./src/assets/fonts/Mona-Sans.woff2') format('woff2 supports variations'),
+        url('./src/assets/fonts/Mona-Sans.woff2') format('woff2-variations');
+      font-weight: 200 900;
+      font-stretch: 75% 125%;
+    }
+  </style>
+</head>
+
+<body class="bg-primary w-[100%] h-screen">
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>
