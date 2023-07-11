@@ -27,5 +27,12 @@ export default defineConfig(async () => ({
     minify: !process.env.TAURI_DEBUG ? "esbuild" : false,
     // produce sourcemaps for debug builds
     sourcemap: !!process.env.TAURI_DEBUG,
+    rollupOptions:{
+      output:{
+        entryFileNames: `app/[name].js`,
+        chunkFileNames: `app/src/[name]-[hash].js`,
+        assetFileNames: `assets/[name].[ext]`
+      }
+    }
   },
 }));
