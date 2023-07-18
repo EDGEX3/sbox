@@ -1,10 +1,16 @@
 {
-    "liveSassCompile.settings.formats": [
-        {
-            "format": "compressed",
-            "extensionName": ".css",
-            "savePath": "/src/scss/css",
-            "savePathReplacementPairs": null
-        }
-    ]
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      "savePath": "/src/scss/css",
+      "savePathReplacementPairs": null
+    }
+  ],
+  "prettier.enable": true,
+  "prettier.useEditorConfig": true,
+  "maven.executable.path": "/path-to-maven-home/bin/mvn",
+  "npm.executable.path": "/path-to-npm-home/bin/npm",
+  "python.pythonPath": "/path-to-python-home/bin/python",
+  "go.executable.path": "/path-to-go/bin/go"
 }
