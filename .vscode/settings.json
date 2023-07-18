@@ -12,5 +12,6 @@
   "maven.executable.path": "/path-to-maven-home/bin/mvn",
   "npm.executable.path": "/path-to-npm-home/bin/npm",
   "python.pythonPath": "/path-to-python-home/bin/python",
-  "go.executable.path": "/path-to-go/bin/go"
+  "go.executable.path": "/path-to-go/bin/go",
+  "terminal.integrated.tabs.defaultIcon": "run-all",
 }
