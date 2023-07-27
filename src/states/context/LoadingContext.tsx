@@ -7,7 +7,7 @@ import {
 } from "react";
 
 export type Loading = {
-  display: string;
+  display: boolean;
 };
 
 export interface LoadingContextInterface {
@@ -17,7 +17,7 @@ export interface LoadingContextInterface {
 
 const defaultState = {
   loading: {
-    display: "flex",
+    display: false,
   },
   setLoading: (loading: Loading) => {},
 } as LoadingContextInterface;
@@ -30,7 +30,7 @@ type LoadingProviderProps = {
 
 export const LoadingProvider = ({ children }: LoadingProviderProps) => {
   const [loading, setLoading] = useState<Loading>({
-    display: "flex",
+    display: false,
   });
 
   return (

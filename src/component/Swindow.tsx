@@ -1,14 +1,15 @@
 import { useContext, useEffect } from "react";
-import { LoadingContext } from "../redux/context/LoadingContext";
+import { LoadingContext } from "../states/context/LoadingContext";
 import Dashboard from "./dashboard/Dashboard";
 import { Tauri_window } from "../Utils/utils";
 import { invoke } from "@tauri-apps/api";
 const Swindow = () => {
+  //splash screen context
   const { setLoading } = useContext(LoadingContext);
   useEffect(() => {
     setTimeout(() => {
       setLoading({
-        display: "hidden",
+        display: true,
       });
      (Tauri_window)?
         invoke("close_splashscreen")

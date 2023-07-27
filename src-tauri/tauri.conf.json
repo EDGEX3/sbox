@@ -65,7 +65,9 @@
         "minWidth": 960,
         "visible": false,
         "center": true,
-        "theme":"Dark"
+        "theme":"Dark",
+        "transparent": true,
+        "titleBarStyle":"Transparent" 
       },
       {
        "width": 600,

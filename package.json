@@ -7,11 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "tauri": "tauri"
+    "tauri": "tauri",
+    "tauri-preview": "tauri dev"
   },
   "dependencies": {
     "@tauri-apps/api": "^1.2.0",
-    "iconoir-react": "^6.9.0",
+    "iconoir-react": "^6.10.0",
     "jotai": "^2.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

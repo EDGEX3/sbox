@@ -1,11 +1,12 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import sbox from '../../../assets/icons/sbox.svg';
-import { LoadingContext } from '../../../redux/context/LoadingContext';
+import { LoadingContext } from '../../../states/context/LoadingContext';
 const Loading = () => {
   const { loading } = useContext(LoadingContext);
   console.log(loading);
   return (
-    <div className={`w-[100%] ${loading?.display} items-center justify-center fixed`}>
+    (loading.display)?(null):(
+    <div className={`w-[100%] flex items-center justify-center fixed`}>
      <div className='w-[256px] h-[256px] bg-blue-400 blur-[350px] absolute bg-opacity-70'>
      </div>
      <div className="grids w-[100%] grid justify-center grid-cols-3 grid-rows-3">
@@ -20,7 +21,7 @@ const Loading = () => {
       <div className="border-dashed border-t-[0.2px] border-blue-100/[0.2]"></div>
      </div>
       <img className="logo w-[128px] z-10 absolute" src={sbox} alt="logo"/>
-    </div>
+    </div>)
   );
 };
 
