@@ -1,8 +1,8 @@
 import { useContext, useEffect } from "react";
-import { LoadingContext } from "../states/context/LoadingContext";
-import Dashboard from "./dashboard/Dashboard";
-import { Tauri_window } from "../Utils/utils";
+import { LoadingContext } from "@/states/context/LoadingContext";
+import * as utils from "@/Utils/utils";
 import { invoke } from "@tauri-apps/api";
+import Dashboard from "@/component/dashboard/Dashboard";
 const Swindow = () => {
   //splash screen context
   const { setLoading } = useContext(LoadingContext);
@@ -11,7 +11,7 @@ const Swindow = () => {
       setLoading({
         display: true,
       });
-     (Tauri_window)?
+     (utils.Tauri_window)?
         invoke("close_splashscreen")
       :null;
     }, 3000);

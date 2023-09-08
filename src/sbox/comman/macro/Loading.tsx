@@ -1,6 +1,6 @@
-import { useContext, useEffect } from 'react';
-import sbox from '../../../assets/icons/sbox.svg';
-import { LoadingContext } from '../../../states/context/LoadingContext';
+import { useContext} from 'react';
+import sbox from '@/assets/icons/sbox.svg';
+import { LoadingContext } from '@/states/context/LoadingContext';
 const Loading = () => {
   const { loading } = useContext(LoadingContext);
   console.log(loading);
