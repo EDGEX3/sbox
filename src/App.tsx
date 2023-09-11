@@ -1,13 +1,16 @@
 import "@/css/index.css";
-import Swindow from "@/component/Swindow";
-import Loading from "@/component/comman/macro/Loading";
+import Loading from "@/sbox/comman/macro/Loading";
+import Swindow from "@/sbox/Swindow";
 import { LoadingProvider } from "@/states/context/LoadingContext";
+import { ThemeProvider } from "./states/context/ThemeContext";
 function App() {
   return (
-    <LoadingProvider>
-      <Loading />
-      <Swindow />
-    </LoadingProvider>
+    <ThemeProvider>
+      <LoadingProvider>
+        <Loading />
+        <Swindow />
+      </LoadingProvider>
+    </ThemeProvider>
   );
 }
 

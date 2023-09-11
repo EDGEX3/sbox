@@ -11,6 +11,7 @@
     "tauri-preview": "tauri dev"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.0.2",
     "@tabler/icons-react": "^2.30.0",
     "@tauri-apps/api": "^1.2.0",
     "class-variance-authority": "^0.7.0",
