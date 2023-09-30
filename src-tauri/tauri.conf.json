@@ -41,9 +41,9 @@
       "shortDescription": "",
       "targets": "all",
       "windows": {
-        "certificateThumbprint": null,
+        "certificateThumbprint": "77EDDDDBA4248A377DBE1A1741A4EF76200BBD9B",
         "digestAlgorithm": "sha256",
-        "timestampUrl": "",
+        "timestampUrl": "http://timestamp.comodoca.com",
         "wix": {
           "bannerPath": "icons/banner/mini.jpg",
           "dialogImagePath": "icons/banner/big.jpg"
